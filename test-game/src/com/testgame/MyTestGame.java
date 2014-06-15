@@ -15,6 +15,7 @@ public class MyTestGame extends Game {
 	private static MyTestGame instance = new MyTestGame();
 	
 	private MyTestGame() {
+	
 	}
 	
 	public static MyTestGame getInstance() {
@@ -35,6 +36,7 @@ public class MyTestGame extends Game {
 	
 	public void showMenu() {
 		setScreen(menuScreen);
+		
 	}
 	
 	public void showGame() {

@@ -12,8 +12,10 @@ public class MainActivity extends AndroidApplication {
         
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.useGL20 = false;
-        
-        //initialize(MyTestGame.getInstance(), cfg);
+
         initialize(new TouchPadTest(), cfg);
+        
+        DBUser.execute("CREATE TABLE t(x INTEGER PRIMARY KEY ASC, y, z);");
+        
     }
 }
