@@ -15,7 +15,7 @@ public class MainActivity extends AndroidApplication {
 
         initialize(new TouchPadTest(), cfg);
         
-        DBUser.execute("CREATE TABLE t(x INTEGER PRIMARY KEY ASC, y, z);");
+        DBUser.execute("CREATE TABLE t(x INTEGER PRIMARY KEY ASC, y, z)");
         
     }
 }
